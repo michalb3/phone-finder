@@ -1,0 +1,19 @@
+.cookie-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: .9375rem 1.5625rem 0;
+  background-color: rgba(#2ea1f8, .9);
+
+  &__text {
+    margin: 0 .9375rem .9375rem 0;
+    color: #fff;
+  }
+
+  &__close {
+    @include button-variant(#fff, #fff);
+    margin: 0 0 .9375rem;
+    color: #354052;
+  }
+}

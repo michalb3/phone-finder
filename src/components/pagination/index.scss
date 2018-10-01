@@ -1,0 +1,26 @@
+.pagination {
+  display: flex;
+  align-items: center;
+
+  &__inner {
+    display: inline-flex;
+    padding: .4375rem .3125rem;
+    background-color: #fff;
+    border: 1px solid #e6eaee;
+  }
+
+  &__link {
+    @extend .btn-sm;
+    @include button-variant(#dbdee2, #bfc4cb);
+    margin: 0 .125rem;
+
+    &--prev,
+    &--next {
+      @include button-variant(#2a3547, #12171f);
+    }
+
+    &--active {
+      @include button-variant(#0990f7, #0673c7);
+    }
+  }
+}

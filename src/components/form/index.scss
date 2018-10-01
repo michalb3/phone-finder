@@ -1,0 +1,194 @@
+.form {
+  color: #fff;
+
+  &__outer {
+    background-color: #222c3c;
+
+    @media screen and (min-width: 768px) {
+      height: 100%;
+    }
+  }
+
+  &__scrollbar {
+    .scrollbar {
+      &__slider {
+        @media screen and (min-width: 768px) {
+          width: .625rem;
+        }
+      }
+
+      &__vertical {
+        @media screen and (min-width: 768px) {
+          border: 1px solid #222c3c;
+        }
+      }
+    }
+  }
+
+  &__inner {
+    padding: 2.5rem 1.875rem;
+
+    @media screen and (min-width: 768px) {
+      padding: 3rem;
+    }
+  }
+
+  &__label {
+    margin: 0 0 1.875rem;
+    font-size: 1.0625rem;
+  }
+
+  &__search {
+    @extend .form-control;
+    position: relative;
+    z-index: 101;
+    border-color: rgba(#fff, .1);
+
+    &,
+    &:focus {
+      color: #7f8fa4;
+      background-color: #2a3547;
+    }
+
+    &:focus {
+      border-color: #2ea1f8;
+    }
+  }
+
+  &__autocomplete {
+    @extend .list-unstyled;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    color: #7f8fa4;
+    background-color: #2a3547;
+
+    .ui-menu-item-wrapper {
+      margin: -1px;
+      padding: .375rem .75rem;
+
+      &,
+      &.ui-state-active {
+        border: 1px solid #394250;
+      }
+
+      &.ui-state-active {
+        color: #fff;
+        background-color: #2ea1f8;
+      }
+
+      @media screen and (min-width: 768px) {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__slider {
+    margin: 0 0 1.875rem;
+
+    .form {
+      &__result {
+        text-align: center;
+      }
+    }
+  }
+
+  &__ui-slider {
+    margin: 0 0 1.25rem;
+  }
+
+  &__result {
+    display: block;
+    color: #7f8fa4;
+  }
+
+  &__checkbox-group {
+    .checkbox {
+      min-width: 9.375rem;
+    }
+  }
+
+  &__group {
+    @extend .form-group;
+    margin: 0 0 3rem;
+
+    &--search {
+      position: relative;
+    }
+  }
+
+  &__reset {
+    @include button-variant(#2ea1f8, #0889eb);
+  }
+
+  &__switcher {
+    @extend .btn;
+    display: none;
+
+    &:before {
+      @media screen and (min-width: 768px) {
+        content: "\0000AB";
+      }
+    }
+
+    &--on {
+      &:before {
+        @media screen and (min-width: 768px) {
+          content: "\0000BB";
+        }
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      @include button-variant(#2a3547, #2a3547);
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(100%, -50%);
+      display: block;
+      padding: 0;
+      width: 1.3125rem;
+      max-height: 9.375rem;
+      height:100%;
+    }
+  }
+
+  &--hidden ~ .content {
+    .view {
+      &--tiles {
+        .view {
+          &__item {
+            @media screen and (min-width: 768px) {
+              width: 50%;
+            }
+
+            @media screen and (min-width: 983px) {
+              width: 33.33333333333333%;
+            }
+
+            @media screen and (min-width: 1461px) {
+              width: 25%;
+            }
+
+            @media screen and (min-width: 2068px) {
+              width: 20%;
+            }
+
+            @media screen and (min-width: 2590px) {
+              width: 16.66666666666667%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-left: 0 !important;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 100%;
+    transition: margin-left .4s;
+  }
+}

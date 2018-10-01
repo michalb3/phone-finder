@@ -1,0 +1,42 @@
+.checkbox {
+  @extend .custom-control;
+  @extend .custom-checkbox;
+
+  &__label {
+    @extend .custom-control-label;
+
+    &:before {
+      background-color: #2a3547;
+    }
+
+    @media screen and (min-width: 768px) {
+      cursor: pointer;
+    }
+  }
+
+  .checkbox {
+    &__input {
+      @extend .custom-control-input;
+
+      &:checked {
+        & ~ .checkbox {
+          &__label {
+            &:before {
+              background-color: #2ea1f8;
+            }
+          }
+        }
+      }
+
+      &:active {
+        & ~ .checkbox {
+          &__label {
+            &:before {
+              background-color: rgba(#fff, 0.1);
+            }
+          }
+        }
+      }
+    }
+  }
+}

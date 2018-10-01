@@ -1,0 +1,28 @@
+.sorting {
+  display: inline-flex;
+  align-items: center;
+
+  &__label,
+  &__select {
+    color: #7f8fa4;
+  }
+
+  &__label {
+    margin: 0 .625rem 0 0;
+    white-space: nowrap;
+
+    @media screen and (min-width: 768px) {
+      cursor: pointer;
+    }
+  }
+
+  &__select {
+    @extend .form-control;
+    @extend .form-control-sm;
+    border-color: #e6eaee;
+
+    @media screen and (min-width: 768px) {
+      cursor: pointer;
+    }
+  }
+}

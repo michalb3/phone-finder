@@ -1,0 +1,70 @@
+.comparison-widget {
+  display: inline-flex;
+  padding: .4375rem .3125rem;
+  background-color: #fff;
+  border: 1px solid #e6eaee;
+
+  &__nav {
+    .nav {
+      &__link {
+        @extend .btn-sm;
+        @include button-variant(#ff8500, #cc6a00);
+        margin: 0 .125rem;
+        color: #fff;
+      }
+    }
+  }
+
+  &__links {
+    display: inline-flex;
+  }
+
+  &__img {
+    width: 1.9375rem;
+    height: 1.9375rem;
+    object-fit: cover;
+    transition: opacity .15s ease-in-out;
+  }
+
+  &__link {
+    position: relative;
+    margin: 0 .125rem;
+    padding: 0;
+    background-color: #222c3c;
+    border: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: none;
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        z-index: 1;
+        border: 0 solid #fff
+      }
+
+      &:before {
+        width: 40%;
+        border-top-width: 2px;
+      }
+
+      &:after {
+        padding-top: 40%;
+        height: 0;
+        border-left-width: 2px;
+      }
+
+      .comparison-widget {
+        &__img {
+          opacity: .7;
+        }
+      }
+    }
+  }
+}

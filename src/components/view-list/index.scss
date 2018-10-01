@@ -1,0 +1,41 @@
+.view {
+  &--list {
+    padding: 0;
+
+    .view {
+      &__item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 0 1.25rem;
+        padding: 1.25rem 1.25rem 0;
+        background-color: #fff;
+        border: 1px solid #e6eaee;
+      }
+
+      &__inner {
+        margin: 0 0 1.25rem;
+      }
+
+      &__figure {
+        margin: 0 1.25rem 1.25rem 0;
+      }
+
+      &__img {
+        width: 6.25rem;
+        height: 6.25rem;
+        object-fit: cover;
+      }
+
+      &__name {
+        margin: 0 0 1.5625rem;
+      }
+
+      &__compare {
+        position: absolute;
+        top: 1.25rem;
+        right: 1.25rem;
+      }
+    }
+  }
+}

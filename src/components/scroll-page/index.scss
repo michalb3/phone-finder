@@ -1,0 +1,44 @@
+.scroll-page {
+  @extend .btn;
+  @include button-variant(#2a3547, #12171f);
+  position: relative;
+  width: 2.3125rem;
+  height: 2.3125rem;
+
+  &--hidden {
+    display: none;
+  }
+
+  &__arrow {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    margin: 4px auto 0;
+    width: .875rem;
+    height: .875rem;
+    background-color: inherit;
+
+    &,
+    &:before,
+    &:after {
+      position: absolute;
+      right: 0;
+      left: 0;
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      top: 0;
+      bottom: 0;
+    }
+
+    &:before {
+      background-color: #fff;
+    }
+
+    &:after {
+      transform: translate(2px, 2px);
+      background-color: inherit;
+    }
+  }
+}

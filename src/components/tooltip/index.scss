@@ -1,0 +1,38 @@
+.tooltip {
+  position: absolute;
+  right: 0;
+  display: none;
+  margin-top: .9375rem;
+  padding: .375rem .75rem;
+  color: #7f8fa4;
+  background-color: #f0f2f5;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: .9375rem;
+    transform: translateY(-100%);
+    width: 0;
+    height: 0;
+    border-right: .5rem solid transparent;
+    border-bottom: .5rem solid #f0f2f5;
+    border-left: .5rem solid transparent;
+  }
+
+  &--top {
+    top: 0;
+    right: auto;
+    transform: translateY(-100%);
+    margin-top: -0.625rem;
+
+    &:before {
+      top: auto;
+      bottom: 0;
+      left: .9375rem;
+      transform: translateY(100%);
+      border-top: .5rem solid #f0f2f5;
+      border-bottom: none;
+    }
+  }
+}

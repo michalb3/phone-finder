@@ -1,0 +1,134 @@
+.parameters {
+  @extend .list-unstyled;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+
+    &:before {
+      content: "";
+      margin: 0 .3125rem 0 0;
+      min-width: 1.25rem;
+      min-height: 1.25rem;
+      background-size: cover;
+    }
+
+    &--empty {
+      color: #dbdee2;
+    }
+
+    &--battery {
+      &:before {
+        background-image: url(./img/icons/battery.svg);
+      }
+
+      &.parameters {
+        &__item {
+          &--empty {
+            &:before {
+              background-image: url(./img/icons/battery-empty.svg);
+            }
+          }
+        }
+      }
+    }
+
+    &--cpu {
+      &:before {
+        background-image: url(./img/icons/cpu.svg);
+      }
+
+      &.parameters {
+        &__item {
+          &--empty {
+            &:before {
+              background-image: url(./img/icons/cpu-empty.svg);
+            }
+          }
+        }
+      }
+    }
+
+    &--diagonal {
+      &:before {
+        background-image: url(./img/icons/diagonal.svg);
+      }
+
+      &.parameters {
+        &__item {
+          &--empty {
+            &:before {
+              background-image: url(./img/icons/diagonal-empty.svg);
+            }
+          }
+        }
+      }
+    }
+
+    &--memory {
+      &:before {
+        background-image: url(./img/icons/memory.svg);
+      }
+
+      &.parameters {
+        &__item {
+          &--empty {
+            &:before {
+              background-image: url(./img/icons/memory-empty.svg);
+            }
+          }
+        }
+      }
+    }
+
+    &--os {
+      &:before {
+        background-image: url(./img/icons/os.svg);
+      }
+
+      &.parameters {
+        &__item {
+          &--empty {
+            &:before {
+              background-image: url(./img/icons/os-empty.svg);
+            }
+          }
+        }
+      }
+    }
+
+    &--ram {
+      &:before {
+        background-image: url(./img/icons/ram.svg);
+      }
+
+      &.parameters {
+        &__item {
+          &--empty {
+            &:before {
+              background-image: url(./img/icons/ram-empty.svg);
+            }
+          }
+        }
+      }
+    }
+
+    &--resolution {
+      &:before {
+        background-image: url(./img/icons/resolution.svg);
+      }
+
+      &.parameters {
+        &__item {
+          &--empty {
+            &:before {
+              background-image: url(./img/icons/resolution-empty.svg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

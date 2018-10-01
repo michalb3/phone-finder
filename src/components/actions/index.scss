@@ -1,0 +1,34 @@
+.actions {
+  display: inline-flex;
+  align-items: center;
+  padding: .4375rem;
+  background-color: #fff;
+  border: 1px solid #e6eaee;
+
+  &__nav {
+    margin-right: .9375rem;
+
+    .nav {
+      &__link {
+        &--comparison {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__sorting {
+    .sorting {
+      &__label {
+        font-size: .875rem;
+      }
+    }
+  }
+
+  &__difference {
+    @extend .btn-sm;
+    @include button-variant(#ff8500, #cc6a00);
+    margin: 0 0 0 -.625rem;
+    color: #fff;
+  }
+}

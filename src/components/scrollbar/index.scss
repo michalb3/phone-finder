@@ -1,0 +1,64 @@
+@media screen and (min-width: 768px) {
+  .scrollbar {
+    overflow: hidden;
+    height: 100%;
+
+    &__inner {
+      overflow-y: scroll;
+      margin-right: -25px;
+      height: 100%;
+
+      &--hidden {
+        .scrollbar {
+          &__slider {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &__slider,
+    &__vertical {
+      position: absolute;
+      top: 0;
+    }
+
+    &__slider {
+      right: 0;
+      bottom: 0;
+      width: 8px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &__vertical {
+      width: 100%;
+      background-color: rgba(#fff, .1);
+    }
+
+    &--auto-hide {
+      .scrollbar {
+        &__vertical {
+          opacity: 0;
+          transition: opacity 0.15s ease-in-out;
+
+          &.ui-draggable-dragging {
+            opacity: 1;
+          }
+        }
+
+        &__inner {
+          &:hover {
+            .scrollbar {
+              &__vertical {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

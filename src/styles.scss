@@ -1,0 +1,50 @@
+// Bootstrap variables
+$body-bg: #f0f2f5;
+$body-color: #354052;
+$enable-rounded: false;
+
+// Bootstrap
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+@import "../node_modules/bootstrap/scss/_mixins";
+@import "../node_modules/bootstrap/scss/_reboot";
+@import "../node_modules/bootstrap/scss/_type";
+@import "../node_modules/bootstrap/scss/_grid";
+@import "../node_modules/bootstrap/scss/_forms";
+@import "../node_modules/bootstrap/scss/_buttons";
+@import "../node_modules/bootstrap/scss/_custom-forms";
+@import "../node_modules/bootstrap/scss/_nav";
+@import "../node_modules/bootstrap/scss/_navbar";
+@import "../node_modules/bootstrap/scss/_card";
+@import "../node_modules/bootstrap/scss/_list-group";
+@import "../node_modules/bootstrap/scss/_print";
+
+// App styles
+@import "./components/link";
+@import "./components/checkbox";
+@import "./components/ajax-loader";
+@import "./components/tooltip";
+@import "./components/cookie-info";
+@import "./components/slider";
+@import "./components/checkbox-group";
+@import "./components/scrollbar";
+@import "./components/form";
+@import "./components/nav";
+@import "./components/navbar";
+@import "./components/sorting";
+@import "./components/actions";
+@import "./components/comparison-widget";
+@import "./components/parameters";
+@import "./components/view-list";
+@import "./components/view-tiles";
+@import "./components/view-comparison";
+@import "./components/view";
+@import "./components/page-info";
+@import "./components/pagination";
+@import "./components/scroll-page";
+@import "./components/content";
+@import "./components/app";
+
+.ui-helper-hidden-accessible {
+  display: none;
+}

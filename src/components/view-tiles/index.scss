@@ -1,0 +1,78 @@
+.view {
+  &--tiles {
+    @extend .row;
+    margin-right: -.625rem;
+    margin-left: -.625rem;
+
+    .view {
+      &__outer {
+        @extend .card;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border-color: #e6eaee;
+      }
+
+      &__item {
+        margin: 0 0 1.25rem;
+        padding: 0 .625rem;
+
+        @media screen and (min-width: 533px) {
+          width: 50%;
+        }
+
+        @media screen and (min-width: 768px) {
+          width: 100%;
+        }
+
+        @media screen and (min-width: 983px) {
+          width: 50%;
+        }
+
+        @media screen and (min-width: 1461px) {
+          width: 33.33333333333333%;
+        }
+
+        @media screen and (min-width: 2068px) {
+          width: 25%;
+        }
+
+        @media screen and (min-width: 2590px) {
+          width: 20%;
+        }
+      }
+
+      &__img {
+        width: 100%;
+        height: auto;
+        max-height: 31.25rem;
+        object-fit: cover;
+      }
+
+      &__inner {
+        @extend .card-body;
+        padding: 1.875rem;
+        max-width: 100%;
+      }
+
+      &__name {
+        margin: 0 0 1.5625rem;
+      }
+
+      &__list {
+        margin-bottom: 1.5625rem;
+
+        .parameters {
+          &__item {
+            flex: 1;
+            min-width: 9rem;
+          }
+        }
+      }
+
+      &__compare {
+        position: relative;
+        display: inline-block;
+      }
+    }
+  }
+}

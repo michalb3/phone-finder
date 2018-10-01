@@ -1,0 +1,31 @@
+.checkbox-group {
+  &--expanded {
+    .checkbox-group__inner {
+      height: 100%;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-bottom: 1.875rem;
+    padding: 0 3px;
+    height: 10.5rem;
+  }
+
+  &__checkbox {
+    width: 50%;
+    min-width: 6.8125rem;
+
+    .checkbox__label {
+      @extend .form__result;
+      display: inline;
+    }
+  }
+
+  &__switcher {
+    @extend .btn-sm;
+    @include button-variant(#2a3547, #2a3547);
+  }
+}

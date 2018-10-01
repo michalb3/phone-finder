@@ -1,0 +1,115 @@
+.view {
+  &--comparison {
+    overflow: hidden;
+
+    .view {
+      &__outer {
+        @extend .row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin: 0 -.625rem;
+      }
+
+      &__item {
+        @extend .col-auto;
+        flex: 1;
+        padding: 0 .625rem;
+      }
+
+      &__inner {
+        display: flex;
+        flex-direction: column;
+        padding: 1.25rem;
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid #e6eaee;
+        border-bottom-width: 0;
+      }
+
+      &__name {
+        margin: 0;
+      }
+
+      &__figure {
+        order: -1;
+        margin: 0 0 1.25rem;
+      }
+
+      &__img {
+        width: 12.5rem;
+        height: 12.5rem;
+        object-fit: cover;
+      }
+
+      &__list {
+        @extend .list-group;
+        margin: 0;
+
+        .parameters {
+          &__item {
+            @extend .list-group-item;
+            display: inline-flex;
+            padding: .625rem;
+            border-color: #e6eaee;
+          }
+        }
+      }
+    }
+  }
+
+  &--difference {
+    .parameters {
+      &__item {
+        &--difference {
+          color: #ff8500;
+
+          &.parameters {
+            &__item {
+              &--battery {
+                &:before {
+                  background-image: url(./img/icons/battery-difference.svg);
+                }
+              }
+
+              &--cpu {
+                &:before {
+                  background-image: url(./img/icons/cpu-difference.svg);
+                }
+              }
+
+              &--diagonal {
+                &:before {
+                  background-image: url(./img/icons/diagonal-difference.svg);
+                }
+              }
+
+              &--memory {
+                &:before {
+                  background-image: url(./img/icons/memory-difference.svg);
+                }
+              }
+
+              &--os {
+                &:before {
+                  background-image: url(./img/icons/os-difference.svg);
+                }
+              }
+
+              &--ram {
+                &:before {
+                  background-image: url(./img/icons/ram-difference.svg);
+                }
+              }
+
+              &--resolution {
+                &:before {
+                  background-image: url(./img/icons/resolution-difference.svg);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
