@@ -6,7 +6,7 @@ Created with *create-react-app*. See the [full create-react-app guide](https://g
 Try It
 ---
 
-[phone-finder.michalb3.webd.pro](http://phone-finder.michalb3.webd.pro)
+[phone-finder.michalb4.webd.pro](http://phone-finder.michalb4.webd.pro)
 
 Install
 ---
