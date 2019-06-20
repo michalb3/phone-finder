@@ -5,8 +5,8 @@ import ViewComparison from './components/view-comparison';
 export const config = {
   defaultLang: 'pl',
   defaultView: 'list',
-  imgUrl: 'http://michalb3.webd.pro/phone-finder',
-  api: 'http://michalb3.webd.pro/phone-finder/api',
+  imgUrl: 'http://michalb4.webd.pro/phone-finder',
+  api: 'http://michalb4.webd.pro/phone-finder/api',
 };
 
 export const views = {
