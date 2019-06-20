@@ -2,7 +2,7 @@
   "name": "phone-finder",
   "version": "0.1.0",
   "license": "AGPL-3.0",
-  "homepage": "http://phone-finder.michalb3.webd.pro/",
+  "homepage": "http://phone-finder.michalb4.webd.pro/",
   "dependencies": {
     "bootstrap": "^4.1.3",
     "react": "^16.5.2",
